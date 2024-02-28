@@ -1,0 +1,9 @@
+.vertical-line {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 77px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+}
