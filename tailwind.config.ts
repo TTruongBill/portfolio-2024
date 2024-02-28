@@ -18,6 +18,7 @@ const config: Config = {
         blue1: "var(--blue-1)",
         blue2: "var(--blue-2)",
         blue3: "var(--blue-3)",
+        gray1: "var(--gray-1)",
       },
     },
   },
