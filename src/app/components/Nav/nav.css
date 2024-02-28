@@ -1,0 +1,13 @@
+
+#desktop-nav.is-hidden{
+    opacity: 0;
+    transform: translate(0,-60px);
+    transition: .5s ease;
+}
+
+#desktop-nav.is-visible{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: .5s ease;
+    z-index: 1;
+}

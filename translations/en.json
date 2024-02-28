@@ -2,7 +2,9 @@
     "HOME": {
         "title": "home"
     },
-    "NAVIGATION": {
-        "title": "Home"
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT": "About",
+        "PORTFOLIO": "Portfolio"
     }
 }

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import React from "react";
+import { Lato } from "next/font/google";
+import React, { useState } from "react";
 import Header from "../components/header";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,12 +23,13 @@ export default function RootLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
+
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <div className="flex flex-col min-h-screen max-w mx-auto">
+      <body className={`${lato.className}`}>
+        <div className="flex flex-col h-screen max-w mx-auto items-center text-white">
           <Header />
-          <div className="flex-grow mt-20">{children}</div>
+          <div className="w-full h-full">{children}</div>
         </div>
       </body>
     </html>

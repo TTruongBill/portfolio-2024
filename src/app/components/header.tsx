@@ -1,17 +1,19 @@
+import "./header.css"
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+import Link from './Link/Link'
 import React from 'react'
-import LocalSwitcher from './local-switcher'
+import Nav from './Nav/Nav'
+import slugify from 'slugify'
+
 
 export default function Header() {
-    const t = useTranslations('NAVIGATION')
+    const t = useTranslations('NAV')
+  
     return (
-        <header>
-            <h1>Header</h1>
-            <nav className='flex flex-row'>
-                <Link href="/">{t('title')}</Link>
-                <LocalSwitcher />
-            </nav>
-        </header>
+        <Nav buttonLink='/' buttonText='Contact Me'>
+            <Link href={"/" + slugify(t('HOME'))}>{t('HOME')}</Link>
+            <Link href={"/" + slugify(t('ABOUT'))}>{t('ABOUT')}</Link>
+            <Link href={"/" + slugify(t('PORTFOLIO'))}>{t('PORTFOLIO')}</Link>
+        </Nav>
     ) 
 }
