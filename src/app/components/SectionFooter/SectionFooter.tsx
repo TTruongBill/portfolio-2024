@@ -1,7 +1,7 @@
-import './SectionChangeAnimation.css';
+import './SectionFooter.css';
 import Triangle from '../Triangle/Triangle';
 
-export default function SectionChangeAnimation() {
+export default function SectionFooter() {
     return(
         <div className="absolute bottom-0 left-0 pl-[20%]">
             <p>Scroll down</p>

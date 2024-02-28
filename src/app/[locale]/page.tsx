@@ -2,7 +2,7 @@ import Capsule from "../components/Capsule/Capsule";
 import Image from "next/image";
 import H1 from "../components/H1/H1";
 import Typewriter from "../components/Typewriter/Typewriter";
-import SectionChangeAnimation from "../components/SectionChangeAnimation/SectionChangeAnimation";
+import SectionFooter from "../components/SectionFooter/SectionFooter";
 
 export default function Home() {
 
@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="text-[3rem] font-bold"><Typewriter text="Tien Tien Bill Truong" delay={100} infinite={true}/></h1>
           <p>Full Stack Web Developper</p>
         </div>
-        <SectionChangeAnimation />
+        <SectionFooter />
       </div>
       <div className="bg-blue-2 text-white w-full h-full flex justify-center items-center flex-col">
       <div className="flex flex-row">
