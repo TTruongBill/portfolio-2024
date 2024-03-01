@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       keyframes: {
         bounce: {
-          '0%, 100%': { transform: 'translateY(120%) rotate(90deg)', scale: '0.5' },
-          '50%': { transform: 'translateY(40%) rotate(90deg)', scale: '0.5' },
+          '50%': { transform: 'translateY(0%) rotate(90deg)', scale: '0.5' },
+          '0%, 100%': { transform: 'translateY(-40%) rotate(90deg)', scale: '0.5' },
         },
       },
       backgroundImage: {
