@@ -1,0 +1,71 @@
+#navMobile{
+    display: flex;
+    padding-left: 20px;
+}
+
+#navMobile h2{
+    margin: 10px 0;
+}
+
+.menuIcon{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transform: rotateZ(0deg);
+}
+
+#menu:checked ~ label > .menuIcon{
+    transform: rotateZ(90deg);
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+.app ~ #menu:checked {
+    opacity: 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    z-index: 2;
+}
+
+.menu nav{
+    z-index: 2;
+}
+
+.menu nav a{
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menu nav a:hover{
+    color: #505050;
+}
+
+.menu .linkContainer{
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    padding-left: 1.50rem
+}

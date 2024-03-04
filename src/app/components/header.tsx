@@ -2,9 +2,10 @@ import "./header.css"
 import { useTranslations } from 'next-intl'
 import Link from './Link/Link'
 import React from 'react'
-import Nav from './Nav/Nav'
+import DesktopNav from './DesktopNav/DesktopNav'
 import slugify from 'slugify'
 import { useLocale } from "next-intl"
+import MobileNav from "./MobileNav/MobileNav"
 
 export default function Header() {
     const t = useTranslations('NAV')
@@ -14,11 +15,25 @@ export default function Header() {
     const linkPortfolio = `/${locale}/${slugify(t('PORTFOLIO')).toLowerCase()}`
   
     return (
-        <Nav buttonLink='/' buttonText='Contact Me'>
+        <>
+            <MobileNav buttonLink='/' buttonText='Contact Me'>
+                <div className="linkContainer">
+                    <Link href={linkHome}>{t('HOME')}</Link>
+                </div>
+                <div className="linkContainer">
+                    <Link href={linkAbout}>{t('ABOUT')}</Link>
+                </div>
+                <div className="linkContainer">
+                    <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
+                </div>
+            </MobileNav>
+            <DesktopNav buttonLink='/' buttonText='Contact Me'>
             <Link href={linkHome}>{t('HOME')}</Link>
-            <Link href={linkAbout}>{t('ABOUT')}</Link>
-            <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
-        </Nav>
+                <Link href={linkAbout}>{t('ABOUT')}</Link>
+                <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
+            </DesktopNav>
+        </>
+       
     ) 
 }
 

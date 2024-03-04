@@ -1,6 +1,6 @@
 import React from "react";
 
-export interface NavProps {
+export interface MobileNavProps {
     children: React.ReactNode;
     buttonText: string;
     buttonLink: string;

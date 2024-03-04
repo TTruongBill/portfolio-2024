@@ -2,14 +2,14 @@
 
 import React from 'react'
 import LocalSwitcher from '../local-switcher'
-import { NavProps } from './types'
+import { DesktopNavProps } from './types'
 import Button from '../Button/Button'
 import H1 from '../H1/H1'
 import Link from '../Link/Link'
-import "./nav.css"
+import "./desktopNav.css"
 import HideMenu from '../HideMenu/HideMenu'
 
-export default function Nav({ children, buttonLink, buttonText }: NavProps) {
+export default function DesktopNav({ children, buttonLink, buttonText }: DesktopNavProps) {
 
     return (
         <HideMenu>
@@ -20,12 +20,11 @@ export default function Nav({ children, buttonLink, buttonText }: NavProps) {
                         {children}
                     </nav>
                     <div className='flex flex-row items-center'>
-                        <Button id="nav-contact" link={buttonLink} title={buttonText}/>
+                        <Button link={buttonLink} title={buttonText} className='nav-contact'/>
                         <LocalSwitcher />
                     </div>
                 </div>
             </header>
         </HideMenu>
-
     ) 
 }
