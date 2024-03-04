@@ -1,5 +1,5 @@
 import './SectionFooter.css';
-import Triangle from '../Triangle/Triangle';
+import Triangle from '../Svg/Triangle';
 
 export default function SectionFooter() {
     return(

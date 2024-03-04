@@ -14,7 +14,7 @@ export default function HideMenu({ children }: HideMenuProps) {
     });
 
     function onScroll() {
-        if (window.innerWidth > 960 && ref.current){
+        if (ref.current){
             let nav = ref.current as HTMLElement;
             var currentScroll = window.scrollY;
                 if (currentScroll > 0 && prevScroll <= currentScroll){
@@ -28,7 +28,7 @@ export default function HideMenu({ children }: HideMenuProps) {
         }
     }
     return(
-        <div id="desktop-nav" ref={ref} className="w-full fixed is-visible">
+        <div ref={ref} className="hide-menu w-full fixed is-visible">
             {children}
         </div>
     )

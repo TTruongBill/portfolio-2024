@@ -21,6 +21,7 @@ const config: Config = {
       },
       colors: {
         'primary': "var(--primary-color)",
+        'purple-1': "var(--purple-1)",
         'blue-1': "var(--blue-1)",
         'blue-2': "var(--blue-2)",
         'blue-3': "var(--blue-3)",

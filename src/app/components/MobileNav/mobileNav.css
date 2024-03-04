@@ -1,19 +1,9 @@
-#navMobile{
-    display: flex;
-    padding-left: 20px;
-}
-
-#navMobile h2{
-    margin: 10px 0;
-}
-
 .menuIcon{
-    position: fixed;
-    top: 10px;
-    right: 10px;
     cursor: pointer;
     z-index: 2;
     transform: rotateZ(0deg);
+    transition: all 0.5s ease;
+    filter: invert(1);
 }
 
 #menu:checked ~ label > .menuIcon{
@@ -28,7 +18,11 @@
     transform: translateX(0%);
 }
 
-.app ~ #menu:checked {
+body:has(#menu:checked) {
+    overflow-y: hidden;
+}
+
+#menu:checked {
     opacity: 0;
 }
 
@@ -39,7 +33,7 @@
     right: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     
     transform: translateX(100%);
     transition: transform 0.5s;
@@ -53,7 +47,6 @@
 .menu nav a{
     font-size: 1.25rem;
     padding-bottom: 1rem;
-    margin-left: 0;
     margin-bottom: 1rem;
     color: white;
     text-decoration: none;
@@ -69,3 +62,4 @@
     padding: 1rem;
     padding-left: 1.50rem
 }
+

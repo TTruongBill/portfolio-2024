@@ -1,15 +1,15 @@
 
-#desktop-nav {
+.hide-menu {
     transition: .5s ease;
     z-index: 1;
 }
 
-#desktop-nav.is-hidden{
+.hide-menu.is-hidden{
     opacity: 0;
     transform: translate(0,-60px);
 }
 
-#desktop-nav.is-visible{
+.hide-menu.is-visible{
     opacity: 1;
     transform: translate(0,0);
 }
