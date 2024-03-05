@@ -5,6 +5,7 @@ import Typewriter from "../components/Typewriter/Typewriter";
 import SectionFooter from "../components/SectionFooter/SectionFooter";
 import ImageWithDescription from "../components/ImageWithDescription/ImageWithDescription";
 import SectionHeader from "../components/SectionHeader/SectionHeader";
+import ContactSection from "../components/ContactSection/ContactSection";
 export default function Home() {
 
   return (
@@ -42,6 +43,7 @@ export default function Home() {
           <SectionFooter />
         </div>
       </div>
+      <ContactSection />
     </>
   );
 }
