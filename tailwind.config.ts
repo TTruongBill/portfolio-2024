@@ -25,6 +25,7 @@ const config: Config = {
         'blue-1': "var(--blue-1)",
         'blue-2': "var(--blue-2)",
         'blue-3': "var(--blue-3)",
+        'blue-4': "var(--blue-4)",
         'gray-1': "var(--gray-1)",
       },
       animation: {

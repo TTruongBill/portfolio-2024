@@ -1,13 +1,11 @@
-"use client";
-
 import Capsule from "../components/Capsule/Capsule";
 import Typewriter from "../components/Typewriter/Typewriter";
 import SectionFooter from "../components/SectionFooter/SectionFooter";
 import ImageWithDescription from "../components/ImageWithDescription/ImageWithDescription";
 import SectionHeader from "../components/SectionHeader/SectionHeader";
 import ContactSection from "../components/ContactSection/ContactSection";
-export default function Home() {
 
+export default function Home() {
   return (
     <>
       <div className="relative bg-blue-2 text-white w-full h-full flex justify-center items-center flex-col">

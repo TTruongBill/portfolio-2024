@@ -6,5 +6,8 @@
         "HOME": "Home",
         "ABOUT": "About",
         "PORTFOLIO": "Portfolio"
+    },
+    "CONTACT_SECTION": {
+        "DESCRIPTION": "Contact me by email or phone to discuss more about collaboration possibilities. :)"
     }
 }

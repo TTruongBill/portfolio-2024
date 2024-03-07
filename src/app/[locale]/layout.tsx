@@ -3,7 +3,7 @@ import { Lato } from "next/font/google";
 import React, { useState } from "react";
 import Header from "../components/header";
 import "./globals.css";
-
+import { NextIntlClientProvider } from 'next-intl';
 
 const description = `Welcome to Tien Tien's portfolio! Explore my website showcasing my recent work over the past 3 years. 
 I specialize in website design and development, focusing on user experience to engage and appeal to visitors. 
@@ -38,10 +38,12 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${lato.className}`}>
-        <div className="flex flex-col h-screen max-w mx-auto items-center text-white">
-          <Header />
-          <div className="w-full h-full">{children}</div>
-        </div>
+        <NextIntlClientProvider >
+          <div className="flex flex-col h-screen max-w mx-auto items-center text-white">
+            <Header />
+            <div className="w-full h-full">{children}</div>
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

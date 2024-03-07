@@ -1,8 +1,9 @@
 import { LabelTextProps } from "./types"
-export default function LabelText({ label, text }: LabelTextProps) {
+
+export default function LabelText({ label, text, className}: LabelTextProps) {
     return(
-        <div>
-            <label className="block text-gray-700">
+        <div className={className}>
+            <label className="block text-blue-4">
             {label}
             </label>
             <p>{text}</p>
