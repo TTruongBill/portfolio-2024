@@ -2,7 +2,7 @@ import "./header.css"
 import { useTranslations } from 'next-intl'
 import Link from './Link/Link'
 import React from 'react'
-import DesktopNav from './DesktopNav/DesktopNav'
+import DesktopNav from '../sections/DesktopNav/DesktopNav'
 import slugify from 'slugify'
 import { useLocale } from "next-intl"
 import MobileNav from "./MobileNav/MobileNav"

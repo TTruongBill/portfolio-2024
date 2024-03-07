@@ -1,6 +1,6 @@
-import Button from "../Button/Button";
-import H1 from "../H1/H1";
-import LabelText from "../LabelText/LabelText";
+import Button from "../../components/Button/Button";
+import H1 from "../../components/H1/H1";
+import LabelText from "../../components/LabelText/LabelText";
 import { useTranslations } from 'next-intl'
 
 export default function ContactSection() {
