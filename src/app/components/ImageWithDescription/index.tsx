@@ -1,5 +1,5 @@
-import H1 from "../H1/H1"
-import Capsule from "../Capsule/Capsule"
+import H1 from "../H1"
+import Capsule from "../Capsule"
 import Image from "next/image"
 import { ImageWithDescriptionProps } from "./types"
 
@@ -20,7 +20,7 @@ export default function ImageWithDescription({
           <div className={`flex flex-col justify-center items-start mt-4 order-1 md:w-1/2 ${imageStyle}`}  >
             <H1>{title}</H1>
             <p className="mt-2">{description}</p>
-            <div className="flex flex-row justify-center flex-wrap">
+            <div className="flex flex-row justify-center flex-wrap w-full">
                 {children}
             </div>
           </div>

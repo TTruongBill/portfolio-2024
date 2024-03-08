@@ -13,6 +13,10 @@ const config: Config = {
           '50%': { transform: 'translateY(0%) rotate(90deg)', scale: '0.5' },
           '0%, 100%': { transform: 'translateY(-40%) rotate(90deg)', scale: '0.5' },
         },
+        'scroll-left': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -30,6 +34,7 @@ const config: Config = {
       },
       animation: {
         'bounce': 'bounce 0.75s ease-in infinite',
+        'scroll-left': 'scroll-left 10s linear infinite',
       }
     },
   },

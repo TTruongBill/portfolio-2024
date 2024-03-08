@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import React, { useState } from "react";
-import Header from "../components/header";
+import Header from "@sections/Header";
 import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 

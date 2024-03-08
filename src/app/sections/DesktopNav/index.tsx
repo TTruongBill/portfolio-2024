@@ -1,13 +1,13 @@
 
 
 import React from 'react'
-import LocalSwitcher from '../../components/local-switcher'
+import LocalSwitcher from '@components/LocalSwitcher'
 import { DesktopNavProps } from './types'
-import Button from '../../components/Button/Button'
-import H1 from '../../components/H1/H1'
-import Link from '../../components/Link/Link'
+import Button from '@components/Button'
+import H1 from '@components/H1'
+import Link from '@components/Link'
 import "./desktopNav.css"
-import HideMenu from '../../components/HideMenu/HideMenu'
+import HideMenu from '@components/HideMenu'
 
 export default function DesktopNav({ children, buttonLink, buttonText }: DesktopNavProps) {
 

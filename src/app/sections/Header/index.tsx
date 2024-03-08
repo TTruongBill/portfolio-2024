@@ -1,11 +1,11 @@
 import "./header.css"
 import { useTranslations } from 'next-intl'
-import Link from './Link/Link'
+import Link from '@components/Link'
 import React from 'react'
-import DesktopNav from '../sections/DesktopNav/DesktopNav'
+import DesktopNav from '@sections/DesktopNav'
 import slugify from 'slugify'
 import { useLocale } from "next-intl"
-import MobileNav from "./MobileNav/MobileNav"
+import MobileNav from "@sections/MobileNav"
 
 export default function Header() {
     const t = useTranslations('NAV')

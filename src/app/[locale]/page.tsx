@@ -1,6 +1,6 @@
-import SectionHome from "../sections/SectionHome/SectionHome";
-import SectionAbout from "../sections/SectionAbout/SectionAbout";
-import ContactSection from "../sections/ContactSection/ContactSection";
+import SectionHome from "@sections/SectionHome";
+import SectionAbout from "@sections/SectionAbout";
+import ContactSection from "@sections/ContactSection";
 
 export default function Home() {
   return (

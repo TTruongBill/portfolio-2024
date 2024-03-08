@@ -1,7 +1,7 @@
-import Capsule from "../../components/Capsule/Capsule";
-import SectionHeader from "../SectionHeader/SectionHeader";
-import ImageWithDescription from "../../components/ImageWithDescription/ImageWithDescription";
-import SectionFooter from "../SectionFooter/SectionFooter";
+import Capsule from "@components/Capsule";
+import SectionHeader from "@sections/SectionHeader";
+import ImageWithDescription from "@components/ImageWithDescription";
+import SectionFooter from "@sections/SectionFooter";
 import { useTranslations } from "next-intl";
 
 export default function SectionAbout() {

@@ -1,14 +1,13 @@
 
-
 import React from 'react'
-import LocalSwitcher from '../local-switcher'
+import LocalSwitcher from '@components/LocalSwitcher'
 import { MobileNavProps } from './types'
-import Button from '../Button/Button'
-import H1 from '../H1/H1'
-import Link from '../Link/Link'
+import Button from '@components/Button'
+import H1 from '@components/H1'
+import Link from '@components/Link'
 import "./mobileNav.css"
-import MenuBurger from '../Svg/MenuBurger'
-import HideMenu from '../HideMenu/HideMenu'
+import MenuBurger from '@components/Svg/MenuBurger'
+import HideMenu from '@components/HideMenu'
 
 export default function MobileNav({ children, buttonLink, buttonText }: MobileNavProps) {
 
