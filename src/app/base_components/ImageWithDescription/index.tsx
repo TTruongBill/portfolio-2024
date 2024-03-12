@@ -25,7 +25,9 @@ export default function ImageWithDescription({
                 {children}
             </div>
           </div>
-          <Image className="w-full md:w-1/2" src={image} alt={alt ?? ""} width={width ?? "500"} height={height ?? "500"}></Image>
+          <div className="w-full md:w-1/2 aspect-[16/9]">
+            <Image className="object-cover w-full" src={image} alt={alt ?? ""} width={width ?? "500"} height={height ?? "500"}></Image>
+          </div>
         </div>
     )
 }
