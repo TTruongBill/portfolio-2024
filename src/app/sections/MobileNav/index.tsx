@@ -12,7 +12,7 @@ import HideMenu from '@components/HideMenu'
 export default function MobileNav({ children }: MobileNavProps) {
 
     return (
-        <HideMenu>
+        <HideMenu id="mobile-nav">
             <header className='w-full flex justify-center fixed z-10 bg-purple-1'>
                 <div className='flex w-full md:hidden flex-row justify-between items-center my-4 mx-6'>
                     <Link href="/"><H1>Tien</H1></Link>

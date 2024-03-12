@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from 'react'
 import { HideMenuProps } from './types'
 
-export default function HideMenu({ children }: HideMenuProps) {
+export default function HideMenu({ children, id }: HideMenuProps) {
     const ref = useRef(null);
     var prevScroll = 0;
 
@@ -28,7 +28,7 @@ export default function HideMenu({ children }: HideMenuProps) {
         }
     }
     return(
-        <div ref={ref} className="hide-menu w-full fixed is-visible">
+        <div ref={ref} id={id} className="hide-menu w-full fixed is-visible">
             {children}
         </div>
     )

@@ -12,7 +12,7 @@ import ContactButton from "@newComponents/ContactButton";
 export default function DesktopNav({ children }: DesktopNavProps) {
 
     return (
-        <HideMenu>
+        <HideMenu id="desktop-nav">
             <header className='w-full flex justify-center bg-purple-1'>
                 <div className='hidden md:flex md:w-full lg:w-3/4 xl:w-1/2 flex-row justify-between items-center my-4 mx-6'>
                     <Link href="/"><H1>Tien</H1></Link>

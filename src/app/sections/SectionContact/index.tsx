@@ -7,11 +7,11 @@ export default function SectionContact() {
     const t = useTranslations("CONTACT_SECTION")
 
     return(
-        <section className="bg-blue-1 p-8">
+        <section className="bg-blue-1 p-4" id="contact">
             <div className="flex flex-col items-start justify-between lg:flex-row md:items-center">
                 <div className="w-full lg:w-1/2 flex flex-col md:flex-row justify-start lg:justify-around items-center"> 
                     <H1 className="md:w-3/4 mb-6 mr-6 md:mb-0 lg:mr-0 ">{t("DESCRIPTION")}</H1>
-                    <ContactButton />
+                    <ContactButton className="mr-0"/>
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col md:flex-row justify-start lg:justify-around items-start md:items-center">
                     <div className="ml-0 mr-6 my-6 lg:ml-6 ">

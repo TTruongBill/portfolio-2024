@@ -28,7 +28,7 @@ export default function Header() {
                 </div>
             </MobileNav>
             <DesktopNav>
-            <Link href={linkHome}>{t('HOME')}</Link>
+                <Link href={linkHome}>{t('HOME')}</Link>
                 <Link href={linkAbout}>{t('ABOUT')}</Link>
                 <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
             </DesktopNav>
