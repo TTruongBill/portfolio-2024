@@ -2,7 +2,7 @@
 import React from 'react'
 import LocalSwitcher from '@components/LocalSwitcher'
 import { MobileNavProps } from './types'
-import Button from '@components/Button'
+import ContactButton from "@newComponents/ContactButton";
 import H1 from '@components/H1'
 import Link from '@components/Link'
 import "./mobileNav.css"
@@ -27,7 +27,7 @@ export default function MobileNav({ children, buttonLink, buttonText }: MobileNa
                             {children}
                         </nav>
                         <div className='flex flex-row items-center ml-6 mb-6'>
-                            <Button link={buttonLink} title={buttonText} className='ml-2 nav-contact'/>
+                            <ContactButton className="ml-2"/>
                             <LocalSwitcher />
                         </div>
                     </div>

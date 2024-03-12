@@ -11,6 +11,7 @@ export default function ImageWithDescription({
     width,
     height,
     order,
+    className,
     children
 } : ImageWithDescriptionProps) {
 
@@ -20,7 +21,7 @@ export default function ImageWithDescription({
           <div className={`flex flex-col justify-center items-start mt-4 order-1 md:w-1/2 ${imageStyle}`}  >
             <H1>{title}</H1>
             <p className="mt-2">{description}</p>
-            <div className="flex flex-row justify-center flex-wrap w-full">
+            <div className={`flex flex-row justify-start flex-wrap ${className ?? ''}`}>
                 {children}
             </div>
           </div>

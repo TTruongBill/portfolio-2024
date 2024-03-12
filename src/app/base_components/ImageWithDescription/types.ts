@@ -6,5 +6,6 @@ export interface ImageWithDescriptionProps{
     width?: number;
     height?: number;
     order?: string;
+    className?: string;
     children: React.ReactNode;
 }

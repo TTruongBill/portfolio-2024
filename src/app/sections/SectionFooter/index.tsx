@@ -10,7 +10,7 @@ export default function SectionFooter() {
             <div className='relative animate-bounce'>
                 <Triangle />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='hidden md:flex justify-center items-center '>
                 <div className="vertical-line" />
             </div>
         </div>

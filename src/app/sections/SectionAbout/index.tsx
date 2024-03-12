@@ -3,6 +3,7 @@ import SectionHeader from "@sections/SectionHeader";
 import ImageWithDescription from "@components/ImageWithDescription";
 import SectionFooter from "@sections/SectionFooter";
 import { useTranslations } from "next-intl";
+import ContactButton from "@newComponents/ContactButton";
 
 export default function SectionAbout() {
     const t = useTranslations("ABOUT_SECTION")
@@ -31,8 +32,9 @@ export default function SectionAbout() {
             <Capsule title="Typescript"/>
             <Capsule title="NextJS"/>
           </ImageWithDescription>
-          <SectionFooter />
+          <ContactButton className="md:text-[1.25rem]"/>
         </div>
+        <SectionFooter />
       </div>
 
     )

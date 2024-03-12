@@ -3,13 +3,13 @@
 import React from 'react'
 import LocalSwitcher from '@components/LocalSwitcher'
 import { DesktopNavProps } from './types'
-import Button from '@components/Button'
 import H1 from '@components/H1'
 import Link from '@components/Link'
 import "./desktopNav.css"
 import HideMenu from '@components/HideMenu'
+import ContactButton from "@newComponents/ContactButton";
 
-export default function DesktopNav({ children, buttonLink, buttonText }: DesktopNavProps) {
+export default function DesktopNav({ children }: DesktopNavProps) {
 
     return (
         <HideMenu>
@@ -20,7 +20,7 @@ export default function DesktopNav({ children, buttonLink, buttonText }: Desktop
                         {children}
                     </nav>
                     <div className='flex flex-row items-center'>
-                        <Button link={buttonLink} title={buttonText} className='nav-contact'/>
+                        <ContactButton />
                         <LocalSwitcher />
                     </div>
                 </div>
