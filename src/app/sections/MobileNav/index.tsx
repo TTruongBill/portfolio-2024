@@ -9,7 +9,7 @@ import "./mobileNav.css"
 import MenuBurger from '@components/Svg/MenuBurger'
 import HideMenu from '@components/HideMenu'
 
-export default function MobileNav({ children, buttonLink, buttonText }: MobileNavProps) {
+export default function MobileNav({ children }: MobileNavProps) {
 
     return (
         <HideMenu>

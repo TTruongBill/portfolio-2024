@@ -16,7 +16,7 @@ export default function Header() {
   
     return (
         <>
-            <MobileNav buttonLink='/' buttonText='Contact Me'>
+            <MobileNav>
                 <div className="linkContainer">
                     <Link href={linkHome}>{t('HOME')}</Link>
                 </div>
@@ -27,7 +27,7 @@ export default function Header() {
                     <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
                 </div>
             </MobileNav>
-            <DesktopNav buttonLink='/' buttonText='Contact Me'>
+            <DesktopNav>
             <Link href={linkHome}>{t('HOME')}</Link>
                 <Link href={linkAbout}>{t('ABOUT')}</Link>
                 <Link href={linkPortfolio}>{t('PORTFOLIO')}</Link>
