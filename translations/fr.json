@@ -6,5 +6,21 @@
         "HOME": "Accueil",
         "ABOUT": "À propos",
         "PORTFOLIO": "Portfolio"
+    },
+    "ABOUT_SECTION": {
+        "TITLE_UX": "Réalisation de Maquettes",
+        "DESCRIPTION_UX": "Je réalise des maquettes de sites web en alignement avec les besoins et les spécifications du client. J'assure une expérience utilisateur optimale en m'assurant que les interfaces soient intuitives, faciles à utiliser et compatibles avec tous les appareils.",
+        "TITLE_FRONTEND": "Développement Front-End",
+        "DESCRIPTION_FRONTEND": "Je développe des sites web en utilisant les dernières technologies. Je développes les sites webs en étant aussi précis que possible tout en suivant la maquette créé à l'étape juste avant celle-ci."
+    },
+    "HEADER_SECTION":{
+        "ABOUT": "À propos",
+        "PORTFOLIO": "Portfolio"
+    },
+    "CONTACT_SECTION": {
+        "DESCRIPTION": "Contactez-moi par courriel ou par téléphone afin de discuter des possibilités de collaboration. :)"
+    },
+    "SECTION_FOOTER": {
+        "SCROLL_DOWN": "Défiler vers le bas"
     }
 }

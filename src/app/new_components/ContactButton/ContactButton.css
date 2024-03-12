@@ -1,0 +1,17 @@
+.purple-button {
+    position: relative;
+    background: linear-gradient(to left, #5658cb 0%, #a055e5 100%);
+    box-shadow: #422da9 3px 3px 5px 0px;
+    transition: background 2s ease-out;
+    text-wrap: nowrap;
+}
+
+.purple-button:hover {
+    background: linear-gradient(to left, #686aeb 0%, #b96eff 100%);
+}
+
+.purple-button:active {
+    left: 3px;
+    top: 3px;
+    box-shadow: none;
+}

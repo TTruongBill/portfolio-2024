@@ -6,5 +6,21 @@
         "HOME": "Home",
         "ABOUT": "About",
         "PORTFOLIO": "Portfolio"
+    },
+    "ABOUT_SECTION": {
+        "TITLE_UX": "UX Design",
+        "DESCRIPTION_UX": "I design user interfaces that are easy to use and visually appealing with our partner's specifications in mind. I make sure that the user experience is intuitive, efficient and compatible through all devices.",
+        "TITLE_FRONTEND": "Front-end Development",
+        "DESCRIPTION_FRONTEND": "I develop responsive websites using the latest technologies. I will develop the website while being as precise as possible using the UI design created with the step above."
+    },
+    "HEADER_SECTION":{
+        "ABOUT": "About",
+        "PORTFOLIO": "Portfolio"
+    },
+    "CONTACT_SECTION": {
+        "DESCRIPTION": "Contact me by email or phone to discuss more about collaboration possibilities. :)"
+    },
+    "SECTION_FOOTER": {
+        "SCROLL_DOWN": "Scroll down"
     }
 }

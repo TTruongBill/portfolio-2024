@@ -10,9 +10,13 @@ const config: Config = {
     extend: {
       keyframes: {
         bounce: {
-          '0%, 100%': { transform: 'translateY(120%) rotate(90deg)', scale: '0.5' },
-          '50%': { transform: 'translateY(40%) rotate(90deg)', scale: '0.5' },
+          '50%': { transform: 'translateY(0%) rotate(90deg)', scale: '0.5' },
+          '0%, 100%': { transform: 'translateY(-40%) rotate(90deg)', scale: '0.5' },
         },
+        'scroll-left': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,13 +25,16 @@ const config: Config = {
       },
       colors: {
         'primary': "var(--primary-color)",
+        'purple-1': "var(--purple-1)",
         'blue-1': "var(--blue-1)",
         'blue-2': "var(--blue-2)",
         'blue-3': "var(--blue-3)",
+        'blue-4': "var(--blue-4)",
         'gray-1': "var(--gray-1)",
       },
       animation: {
         'bounce': 'bounce 0.75s ease-in infinite',
+        'scroll-left': 'scroll-left 10s linear infinite',
       }
     },
   },
