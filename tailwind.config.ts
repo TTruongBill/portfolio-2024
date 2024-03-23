@@ -12,10 +12,6 @@ const config: Config = {
         bounce: {
           '50%': { transform: 'translateY(0%) rotate(90deg)', scale: '0.5' },
           '0%, 100%': { transform: 'translateY(-40%) rotate(90deg)', scale: '0.5' },
-        },
-        'scroll-left': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
         }
       },
       backgroundImage: {

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import LocalSwitcher from '@components/LocalSwitcher'
 import { MobileNavProps } from './types'

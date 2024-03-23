@@ -10,9 +10,9 @@ import MobileNav from "@sections/MobileNav"
 export default function Header() {
     const t = useTranslations('NAV')
     const locale = useLocale()
-    const linkHome = `/${locale}/${slugify(t('HOME')).toLowerCase()}`
-    const linkAbout = `/${locale}/${slugify(t('ABOUT')).toLowerCase()}`
-    const linkPortfolio = `/${locale}/${slugify(t('PORTFOLIO')).toLowerCase()}`
+    const linkHome = `#${slugify(t('HOME')).toLowerCase()}`
+    const linkAbout = `#${slugify(t('ABOUT')).toLowerCase()}`
+    const linkPortfolio = `#${slugify(t('PORTFOLIO')).toLowerCase()}`
   
     return (
         <>

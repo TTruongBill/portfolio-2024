@@ -16,7 +16,7 @@ export default function SectionAbout() {
           <ImageWithDescription 
             title={t("TITLE_UX")}
             description={t("DESCRIPTION_UX")}
-            image="/picture/figma.png"
+            image="/img/figma.png"
           >
             <Capsule title="Figma"/>
             <Capsule title="Photoshop"/>
@@ -25,7 +25,7 @@ export default function SectionAbout() {
           <ImageWithDescription 
             title={t("TITLE_FRONTEND")}
             description={t("DESCRIPTION_FRONTEND")}
-            image="/picture/figma.png"
+            image="/img/figma.png"
             order="left"
           >
             <Capsule title="HTML"/>

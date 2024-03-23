@@ -15,7 +15,7 @@ export default function SectionHome() {
                 <ContactButton className="h-fit mt-4"/>
             </div>
             <div className="w-full mb-16 lg:w-1/2">
-                <Image className="w-full" src="/picture/home.png" alt="picture of Tien Tien's past portfolio" width="500" height="500" />
+                <Image className="w-full" src="/img/home.png" alt="picture of Tien Tien's past portfolio" width="500" height="500" />
             </div>
             <SectionFooter />
         </SectionContainer>

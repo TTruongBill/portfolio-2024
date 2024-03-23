@@ -8,5 +8,5 @@ export interface SwipeInput {
 export interface SwipeOutput {
     onTouchStart: (e: TouchEvent) => void
     onTouchMove: (e: TouchEvent) => void
-    onTouchEnd: () => void
+    onTouchEnd: (e: TouchEvent) => void
 }

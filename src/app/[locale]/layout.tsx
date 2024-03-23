@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
-import React, { useState } from "react";
+import React from "react";
 import Header from "@sections/Header";
 import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={`${lato.className}`}>
         <NextIntlClientProvider >
-          <div className="flex flex-col h-screen max-w mx-auto items-center text-white">
+          <div className="flex flex-col h-screen max-w-full mx-auto items-center text-white overflow-x-clip">
             <Header />
             <div className="w-full h-full">{children}</div>
           </div>
