@@ -2,7 +2,7 @@ import React from 'react'
 import LocalSwitcher from '@components/LocalSwitcher'
 import { MobileNavProps } from './types'
 import ContactButton from "@newComponents/ContactButton";
-import H1 from '@components/H1'
+import { H3 } from '@components/Headings'
 import Link from '@components/Link'
 import "./mobileNav.css"
 import MenuBurger from '@components/Svg/MenuBurger'
@@ -14,12 +14,12 @@ export default function MobileNav({ children }: MobileNavProps) {
         <HideMenu id="mobile-nav">
             <header className='w-full flex justify-center fixed z-10 bg-purple-1'>
                 <div className='flex w-full md:hidden flex-row justify-between items-center my-4 mx-6'>
-                    <Link href="/"><H1>Tien</H1></Link>
+                    <Link href="/"><H3>Tien</H3></Link>
                     <input type="checkbox" id="menu"/>
                     <label htmlFor="menu"><MenuBurger className="menuIcon"/></label>
                     <div className='menu bg-purple-1'>
                         <section className="flex flex-row ml-6 my-4 justify-between items-center mr-8">
-                            <Link href="/"><H1>Tien</H1></Link>
+                            <Link href="/"><H3>Tien</H3></Link>
                             <label htmlFor="menu">x</label>
                         </section>
                         <nav className='flex flex-col items-start mb-10'>

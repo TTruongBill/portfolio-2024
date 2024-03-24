@@ -28,6 +28,16 @@ const config: Config = {
         'blue-4': "var(--blue-4)",
         'gray-1': "var(--gray-1)",
       },
+      fontSize: {
+        'h1': "2.027rem",
+        'h2': "1.802rem",
+        'h3': "1.602rem",
+        'h4': "1.424rem",
+        'h5': "1.266rem",
+        'h6': "1.125rem",
+        'p': "1rem",
+        'small': "0.889rem",
+      },
       animation: {
         'bounce': 'bounce 0.75s ease-in infinite',
         'scroll-left': 'scroll-left 10s linear infinite',

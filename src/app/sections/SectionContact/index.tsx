@@ -1,4 +1,4 @@
-import H1 from "@components/H1";
+import { H3 } from "@components/Headings";
 import LabelText from "@components/LabelText";
 import { useTranslations } from 'next-intl'
 import ContactButton from "@newComponents/ContactButton";
@@ -10,7 +10,7 @@ export default function SectionContact() {
         <section className="bg-blue-1 p-4" id="contact">
             <div className="flex flex-col items-start justify-between lg:flex-row md:items-center">
                 <div className="w-full lg:w-1/2 flex flex-col md:flex-row justify-start lg:justify-around items-center"> 
-                    <H1 className="md:w-3/4 mb-6 mr-6 md:mb-0 lg:mr-0 ">{t("DESCRIPTION")}</H1>
+                    <H3 className="md:w-3/4 mb-6 mr-6 md:mb-0 lg:mr-0 ">{t("DESCRIPTION")}</H3>
                     <ContactButton className="mr-0"/>
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col md:flex-row justify-start lg:justify-around items-start md:items-center">

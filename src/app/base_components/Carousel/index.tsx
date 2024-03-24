@@ -1,14 +1,13 @@
 "use client"
 import React, { useEffect, useMemo } from "react"
-import Image from "next/image"
-import H1 from '@components/H1'
 import useSwipe from "@/app/hooks/useSwipe"
 import './Carousel.css'
 import { carouselProps } from "./types"
-
+import DarkImageRef from "@components/DarkImage"
+import { H3 } from "@components/Headings"
 export default function Carousel({ images, refs, titles }: carouselProps){
     const [currentImg, setCurrentImg] = React.useState(0)
-
+    
     const ref = useMemo(() => [...refs], [refs]);
 
     function swipeRight() {
@@ -21,7 +20,6 @@ export default function Carousel({ images, refs, titles }: carouselProps){
 
     const swipeHandlers = useSwipe({ 
         onSwipedLeft: () => {
-            console.log()
             swipeLeft();
         }, 
         onSwipedRight: () => {
@@ -41,17 +39,19 @@ export default function Carousel({ images, refs, titles }: carouselProps){
 
     return (
         <div className="my-16">
-            <div className="carousel whitespace-nowrap" {...swipeHandlers}>
+            <div className="whitespace-nowrap" {...swipeHandlers}>
                 {
                     images.map((image: string, index: number) => {
                         return (
-                            <div className="inline-block img_container" ref={refs[index]} key={index}>
-                                <Image src={image} alt="carousel image" width={500} height={500} className="aspect-[3/4] object-cover h-full brightness-50 rounded-[15px]"/>
-                                <H1 className="absolute left-4 bottom-6">{titles[index]}</H1>
-                            </div>
+                            <DarkImageRef ref={refs[index]} index={index} image={image} title={titles[index]} key={index}/>
                         )
                     })
                 }
+                <div className="flex flex-row justify-around items-center pt-4">
+                    <p onClick={() => {swipeRight()}}> left </p>
+                    <H3>{(currentImg + 1) + "/" + images.length}</H3>
+                    <p onClick={() => {swipeLeft()}}> right </p>
+                </div>
             </div>
            
         </div>

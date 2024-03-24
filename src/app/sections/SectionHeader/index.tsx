@@ -1,6 +1,6 @@
 import './SectionHeader.css';
 import { SectionHeaderProps } from './types';
-import H1 from '@components/H1';
+import { H1 } from '@components/Headings';
 import { useTranslations } from 'next-intl';
 
 export default function SectionHeader({ title }: SectionHeaderProps) {

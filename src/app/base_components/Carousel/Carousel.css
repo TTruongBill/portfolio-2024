@@ -9,10 +9,18 @@
     aspect-ratio: 3/4;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     .img_container img {
         aspect-ratio: 16/9;
         width: 100%;
     }
     
+}
+
+.img_container p, .img_container h1 {
+    width: calc(100% - 2rem);
+}
+
+.img_container p, .img_container img {
+    transition: all 0.5s ease-in-out;
 }
