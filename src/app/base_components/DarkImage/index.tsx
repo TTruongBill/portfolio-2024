@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, forwardRef, Ref } from "react";
 import Image from "next/image";
 import { H3 } from "@components/Headings";
@@ -14,14 +16,14 @@ const DarkImage = forwardRef((props: DarkImageProps, ref: Ref<HTMLDivElement>) =
             <Image src={image} alt="carousel image" width={500} height={500} className={`aspect-[3/4] object-cover h-full ${clicked ? "brightness-[0.2]" : "brightness-50"} rounded-[15px]`} />
             <div className={`absolute left-8 h-full flex flex-col justify-end ${clicked ? " bottom-8" : " bottom-2"}`}>
                 <H3>{title}</H3>
-                <p className={`text-wrap overflow-y-auto mt-4 ${clicked ? "opacity-1 h-[74%]" : "opacity-0 h-0"}`}>
+                <p className={`text-wrap overflow-y-auto mt-4 ${clicked ? "opacity-1 h-[74%] sm:h-[68%] md:h-[74%] max-w-[450px] sm:max-w-none" : "opacity-0 h-0"}`}>
                     {description}
                     {
                         link && (
                             <>
                                 <br />
                                 <br />
-                                Website Link: <Link href={link} target="_blank" className="text-blue-500 hover:text-blue-400 underline">{link}</Link>
+                                Website: <Link href={link} target="_blank" className="text-blue-500 hover:text-blue-400 underline !mx-0">{link}</Link>
                             </>
                         )
                     }
@@ -30,7 +32,7 @@ const DarkImage = forwardRef((props: DarkImageProps, ref: Ref<HTMLDivElement>) =
                             <>
                                 <br />
                                 <br />
-                                Github Link: <a href={git} target="_blank" className="text-blue-500 hover:text-blue-400 underline">{git}</a>
+                                Github: <Link href={git} target="_blank" className="text-blue-500 hover:text-blue-400 underline !mx-0">{git}</Link>
                             </>
                         )
                     }

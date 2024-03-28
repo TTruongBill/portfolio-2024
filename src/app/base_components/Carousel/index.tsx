@@ -34,7 +34,7 @@ export default function Carousel({ images, titles, descriptions, links, dates, g
     }, [refs, images.length]);
 
     return (
-        <div className="my-16">
+        <div className="">
             <div className="whitespace-nowrap max-w-[1000px]" {...swipeHandlers}>
                 {
                     images.map((image: string, index: number) => {

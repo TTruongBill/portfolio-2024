@@ -1,5 +1,7 @@
-{
-    "CONTACT_ME": {
+{ 
+    "HOME_SECTION": {
+        "DESCRIPTION": "As a graduate in multimedia, I have acquired knowledge and skills that allow me to be efficient and organized.\n\nWebsite development is my primary interest."
+    },    "CONTACT_ME": {
         "MESSAGE" : "Contact me"
     },
     "NAV":{
@@ -32,21 +34,21 @@
                 "DESCRIPTION": "Made with: HTML, SASS, PHP, WordPress, and JavaScript.\n\nThe website was designed to enable the team to learn to work efficiently together, as well as to develop skills in communicating with clients. Additionally, it aimed to apply the acquired knowledge to create and integrate a website using WordPress.\n\nAs the lead programmer, I took charge of creating the overall site template and developing all its functionalities. This included displaying sessions, courses, and content, as well as implementing the mobile navigation bar with a sliding animation. I also handled the display of projects and professors. Additionally, I was responsible for the design and integration of the background bubbles.",
                 "LINK": "https://timm176.sg-host.com",
                 "DATE": "December 2022",
-                "GIT": ""
+                "GIT": "https://github.com/TTruongBill/5W5_TIM"
             },
             "PROJECT_2": {
                 "TITLE": "Memo",
-                "DESCRIPTION": "Made with: HTML, CSS, Javascript, React.js and firebase.\n\nThis website was created to help users create a checklist of tasks to complete. The user can add, delete and check off tasks. The website also has a login system that allows users to save their tasks and access them from any device.\n\nThe website is also responsive and can be used on any device. Both the website and the database is being hosted on Firebase.",
+                "DESCRIPTION": "Made with: HTML, CSS, Javascript, React.js and firebase.\n\nThis website was created to help users create a to-do list. The user can add, delete and check off tasks. The website also lets the user filter tasks based on their status(completed or not), alphabetically, or by date added. It has a login system with Google that allows users to save their tasks and access them from any device.\n\nThe site was developed using React.js for creating components and Firebase for managing the database and hosting the site.",
                 "LINK": "https://react-755b3.web.app/",
                 "DATE": "May 2022",
-                "GIT": ""
+                "GIT": "https://github.com/TTruongBill/memo-1.0/"
             },
             "PROJECT_3": {
                 "TITLE": "Signets",
                 "DESCRIPTION": "Made with: HTML, CSS, Javascript, React.js and firebase.\n\nThis website was created to help users save their favorite websites in a bookmark.\n\nThe user can create a folder with a name, the url of an image and a custom color. The user can add up to 3 websites per folder, they are also able to delete and modify the name, the image's url and the color of the folder. The website has a login system that allows users to save their bookmarks and access them from any device.\n\nSteps to use the website properly: Create a folder with a custom url link for the image(it can be the url of an image from google), then drag and drop any links you want on the folder you want to add bookmarks to.\n\nThe website is also responsive and can be used on any device. Both the website and the database is being hosted on Firebase.",
                 "LINK": "https://react-schooltien.web.app/",
                 "DATE": "April 2022",
-                "GIT": ""
+                "GIT": "https://github.com/TTruongBill/Signets-1.0"
             }
         }
     }
