@@ -24,6 +24,7 @@ export default function SectionContact() {
                     </div>
                 </div>
             </div>
+            <p className="text-start sm:text-center pt-4">&copy; 2024 Tien Tien Bill Truong</p>
         </section>
     )
 }
