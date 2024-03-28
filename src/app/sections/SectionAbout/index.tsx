@@ -18,9 +18,9 @@ export default function SectionAbout() {
             description={t("DESCRIPTION_UX")}
             image="/img/ui_design.jpg"
           >
-            <Capsule title="Figma"/>
-            <Capsule title="Photoshop"/>
-            <Capsule title="Illustrator"/>
+            <Capsule>Figma</Capsule>
+            <Capsule>Photoshop</Capsule>
+            <Capsule>Illustrator</Capsule>
           </ImageWithDescription>
           <ImageWithDescription 
             title={t("TITLE_FRONTEND")}
@@ -28,10 +28,10 @@ export default function SectionAbout() {
             image="/img/web_dev.jpg"
             order="left"
           >
-            <Capsule title="HTML"/>
-            <Capsule title="CSS"/>
-            <Capsule title="Typescript"/>
-            <Capsule title="NextJS"/>
+            <Capsule>HTML</Capsule>
+            <Capsule>CSS</Capsule>
+            <Capsule>Typescript</Capsule>
+            <Capsule>NextJs</Capsule>
           </ImageWithDescription>
           <ContactButton className="md:text-[1.25rem] mr-0"/>
         </div>

@@ -6,5 +6,9 @@ import { useLocale } from "next-intl";
 export default function ContactButton({ className }: ContactButtonProps) {
     const localActive = useLocale();
 
-    return <Button title={localActive == "en" ? "Contact me" : "Contactez-moi"} link="mailto: tientientruong1@gmail.com" className={`purple-button ${className ?? ''}`} />
+    return (
+        <Button link="mailto: tientientruong1@gmail.com" className={`contact-button ${className ?? ''}`}>
+            {localActive == "en" ? "Contact me" : "Contactez-moi"}
+        </Button>
+    )
 }

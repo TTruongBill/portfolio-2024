@@ -1,6 +1,5 @@
-export interface ButtonProps {
-    title: string;
+export interface ButtonProps extends React.HTMLProps<HTMLAnchorElement> {
+    title?: string;
     link: string;
-    id?: string;
-    className?: string;
+    color?: string;
 }

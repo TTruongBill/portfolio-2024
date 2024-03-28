@@ -1,4 +1,4 @@
 export interface CapsuleProps {
-    title: string;
+    children: React.ReactNode;
     id?: string;
 }
