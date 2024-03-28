@@ -1,6 +1,6 @@
 {
-    "HOME": {
-        "title": "accueil"
+    "CONTACT_ME": {
+        "MESSAGE" : "Contactez-moi"
     },
     "NAV": {
         "HOME": "Accueil",
@@ -22,5 +22,23 @@
     },
     "SECTION_FOOTER": {
         "SCROLL_DOWN": "Défiler vers le bas"
+    },
+    "PORTFOLIO_SECTION": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Voici quelques-uns des projets sur lesquels j'ai travaillé. Pour plus d'informations, n'hésitez pas à me contacter.",
+        "PROJECTS": {
+            "PROJECT_1": {
+                "TITLE": "WordPress",
+                "DESCRIPTION": "Fait avec : HTML, SASS, PHP, Wordpress et Javascript.\n\nLe site a été conçu pour permettre à l'équipe d'apprendre à travailler efficacement ensemble, ainsi que pour développer des compétences dans la communication avec les clients. De plus, il visait à appliquer les connaissances acquises pour créer et intégrer un site web en utilisant WordPress.\n\nEn tant que programmeur principal, j'ai pris en charge la création du template général du site ainsi que le développement de toutes ses fonctionnalités. Cela inclut l'affichage des sessions, des cours et des contenus, ainsi que la mise en place de la barre de navigation en format mobile avec une animation de glissement. J'ai également assuré la gestion de l'affichage des projets et des professeurs. De plus, j'ai été responsable de la conception et de l'intégration des bulles dans le background."
+            },
+            "PROJECT_2": {
+                "TITLE": "Memo",
+                "DESCRIPTION": "Description du projet 2"
+            },
+            "PROJECT_3": {
+                "TITLE": "Signets",
+                "DESCRIPTION": "Description du projet 3"
+            }
+        }
     }
 }

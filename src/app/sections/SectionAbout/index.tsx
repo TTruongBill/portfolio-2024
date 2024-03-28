@@ -12,11 +12,11 @@ export default function SectionAbout() {
     return(
       <SectionContainer bgColor="bg-blue-3" id="about">
         <SectionHeader title={"ABOUT"}/>
-        <div className="my-[5rem] md:mt-[7rem] md:mb-[10rem] w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <ImageWithDescription 
             title={t("TITLE_UX")}
             description={t("DESCRIPTION_UX")}
-            image="/img/figma.png"
+            image="/img/ui_design.jpg"
           >
             <Capsule title="Figma"/>
             <Capsule title="Photoshop"/>
@@ -25,7 +25,7 @@ export default function SectionAbout() {
           <ImageWithDescription 
             title={t("TITLE_FRONTEND")}
             description={t("DESCRIPTION_FRONTEND")}
-            image="/img/figma.png"
+            image="/img/web_dev.jpg"
             order="left"
           >
             <Capsule title="HTML"/>

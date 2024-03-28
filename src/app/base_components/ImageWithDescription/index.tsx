@@ -1,5 +1,4 @@
 import { H3 } from "../Headings"
-import Capsule from "../Capsule"
 import Image from "next/image"
 import { ImageWithDescriptionProps } from "./types"
 

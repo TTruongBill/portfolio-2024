@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   authors: {url:"https://portfolio-tientien-truong.vercel.app/",
             name:"Tien Tien Bill Truong"},
   verification: {google: process.env.GOOGLE_KEY},
+  icons: [{ rel: 'icon', url: '/img/favicon.ico' }],
 };
 
 interface RootLayoutProps {

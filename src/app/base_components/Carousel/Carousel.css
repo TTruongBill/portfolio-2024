@@ -21,6 +21,6 @@
     width: calc(100% - 2rem);
 }
 
-.img_container p, .img_container img {
+.img_container p, .img_container img, .img_container > div {
     transition: all 0.5s ease-in-out;
 }
