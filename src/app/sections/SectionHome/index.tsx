@@ -11,7 +11,7 @@ export default function SectionHome() {
 
     return(
         <SectionContainer bgColor="bg-blue-1" id="home" className="lg:h-full lg:justify-around lg:flex-row px-0">
-            <div className="flex flex-col items-start justify-end w-full lg:w-1/3 order-1 lg:order-none">
+            <div className="flex flex-col items-start justify-end w-full h-[340px] max-h-[340px] sm:h-auto lg:w-1/3 order-1 lg:order-none">
                 <H1><Typewriter text="Tien Tien Bill Truong" delay={100} infinite={true}/></H1>
                 <H4>Full Stack Web Developper</H4>
                 <p className="py-6 whitespace-pre-line">{t("DESCRIPTION")}</p>
