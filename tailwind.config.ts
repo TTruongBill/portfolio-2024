@@ -12,10 +12,6 @@ const config: Config = {
         bounce: {
           '50%': { transform: 'translateY(0%) rotate(90deg)', scale: '0.5' },
           '0%, 100%': { transform: 'translateY(-40%) rotate(90deg)', scale: '0.5' },
-        },
-        'scroll-left': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
         }
       },
       backgroundImage: {
@@ -31,6 +27,16 @@ const config: Config = {
         'blue-3': "var(--blue-3)",
         'blue-4': "var(--blue-4)",
         'gray-1': "var(--gray-1)",
+      },
+      fontSize: {
+        'h1': "2.027rem",
+        'h2': "1.802rem",
+        'h3': "1.602rem",
+        'h4': "1.424rem",
+        'h5': "1.266rem",
+        'h6': "1.125rem",
+        'p': "1rem",
+        'small': "0.889rem",
       },
       animation: {
         'bounce': 'bounce 0.75s ease-in infinite',

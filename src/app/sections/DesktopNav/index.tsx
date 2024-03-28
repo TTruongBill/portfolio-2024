@@ -1,23 +1,26 @@
-
-
 import React from 'react'
 import LocalSwitcher from '@components/LocalSwitcher'
 import { DesktopNavProps } from './types'
-import H1 from '@components/H1'
+import { H3 } from '@components/Headings'
 import Link from '@components/Link'
 import "./desktopNav.css"
 import HideMenu from '@components/HideMenu'
 import ContactButton from "@newComponents/ContactButton";
+import slugify from 'slugify'
 
-export default function DesktopNav({ children }: DesktopNavProps) {
+export default function DesktopNav({ links }: DesktopNavProps) {
 
     return (
-        <HideMenu>
+        <HideMenu id="desktop-nav">
             <header className='w-full flex justify-center bg-purple-1'>
                 <div className='hidden md:flex md:w-full lg:w-3/4 xl:w-1/2 flex-row justify-between items-center my-4 mx-6'>
-                    <Link href="/"><H1>Tien</H1></Link>
+                    <Link href="/"><H3>Tien</H3></Link>
                     <nav className='flex flex-row'>
-                        {children}
+                    {links.map((link, i) => {
+                                return (
+                                    <Link href={`#${slugify(link).toLowerCase()}`} key={i}>{link}</Link>
+                                )
+                            })}
                     </nav>
                     <div className='flex flex-row items-center'>
                         <ContactButton />

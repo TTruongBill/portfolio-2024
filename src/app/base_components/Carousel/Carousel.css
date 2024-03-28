@@ -1,0 +1,26 @@
+.img_container {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+}
+
+.img_container img {
+    aspect-ratio: 3/4;
+}
+
+@media screen and (min-width: 640px) {
+    .img_container img {
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+    
+}
+
+.img_container p, .img_container h1 {
+    width: calc(100% - 2rem);
+}
+
+.img_container p, .img_container img, .img_container > div {
+    transition: all 0.5s ease-in-out;
+}
