@@ -3,5 +3,4 @@ export interface ButtonProps {
     link: string;
     id?: string;
     className?: string;
-    props: [x: string];
 }
