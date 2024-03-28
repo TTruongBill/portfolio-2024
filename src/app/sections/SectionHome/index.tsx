@@ -17,8 +17,8 @@ export default function SectionHome() {
                 <p className="py-6 whitespace-pre-line">{t("DESCRIPTION")}</p>
                 <ContactButton className="h-fit mt-4"/>
             </div>
-            <div className="w-full mb-4 lg:w-1/2 max-w-[700px]">
-                <Image className="w-full" src="/img/home.jpg" alt="picture of Tien Tien's past portfolio" width="500" height="500" />
+            <div className="w-full mb-4 lg:w-1/2 max-w-[700px] rounded-full">
+                <Image className="w-full rounded-full" src="/img/tien_pic.png" alt="picture of Tien Tien's past portfolio" width="500" height="500" />
             </div>
             <SectionFooter />
         </SectionContainer>
