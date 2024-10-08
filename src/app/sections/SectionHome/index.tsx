@@ -19,9 +19,9 @@ export default function SectionHome() {
                 <p className="py-6 whitespace-pre-line">{t("DESCRIPTION")}</p>
                 <div className="mt-4 flex flex-row">
                     <ContactButton className="h-fit" />
-                        <Button link="/img/CV.pdf" color="purple" download>
-                            <span className="pr-2">CV FR</span><Download/>
-                        </Button>
+                    <Button link={`/img/${t("CV")}.pdf`} color="purple" download>
+                        <span className="pr-2">CV</span><Download/>
+                    </Button>
                 </div>
             </div>
             <div className="w-full mb-4 lg:w-1/2 max-w-[700px] rounded-full">

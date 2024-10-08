@@ -1,7 +1,9 @@
 { 
     "HOME_SECTION": {
-        "DESCRIPTION": "As a graduate in multimedia, I have acquired knowledge and skills that allow me to be efficient and organized.\n\nWebsite development is my primary interest."
-    },    "CONTACT_ME": {
+        "DESCRIPTION": "As a graduate in multimedia, I have acquired knowledge and skills that allow me to be efficient and organized.\n\nWebsite development is my primary interest.",
+        "CV": "CV_EN"
+    },    
+    "CONTACT_ME": {
         "MESSAGE" : "Contact me"
     },
     "NAV":{
